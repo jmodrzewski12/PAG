@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!Zad1/
+!Pet.java
+!Dog.java
