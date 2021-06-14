@@ -41,7 +41,7 @@ public class interfejs implements ActionListener {
 	JTextField znaki2 = new JTextField(20);
 	String tekst2 = znaki2.getText();
 	
-	JLabel label = new JLabel("Wpisz wartoœæ numeryczn¹: ",JLabel.CENTER);
+	JLabel label = new JLabel("Wpisz wartoÅ“Ã¦ numerycznÂ¹: ",JLabel.CENTER);
 
 	
 	public String getTekst() {
@@ -54,7 +54,7 @@ public class interfejs implements ActionListener {
 	
 	
     public void prepareGUI(){
-        ramka.setTitle("Testowanie danych wejœciowych");
+        ramka.setTitle("Testowanie danych wejÅ“ciowych");
  		ramka.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
  		ramka.setSize(400, 100);
  		ramka.setLocation(600,400);
@@ -90,7 +90,7 @@ public class interfejs implements ActionListener {
         		//ramka2.dispose();
         		//prepareGUI2();
         		znaki2.setText("");
-        		label.setText("Ponownie wpisz wartoœæ numeryczn¹: ");
+        		label.setText("Ponownie wpisz wartoÅ“Ã¦ numerycznÂ¹: ");
             }
         }
 
@@ -125,20 +125,20 @@ public class interfejs implements ActionListener {
     
     }
 	
-	public interfejs() {
-		prepareGUI();
- 		przyciskiRamka();
- 		ramka.add(znaki);
-	}
+    public interfejs() {
+	prepareGUI();
+ 	przyciskiRamka();
+ 	ramka.add(znaki);
+    }
 	
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			@Override
-			public void run() {
-				new interfejs();
-			}
-		});
-	}
+    public static void main(String[] args) {
+	EventQueue.invokeLater(new Runnable() {
+	    @Override
+	    public void run() {
+		new interfejs();
+	    }
+	});
+    }
 }
 
 
